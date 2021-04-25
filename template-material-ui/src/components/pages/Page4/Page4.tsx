@@ -10,10 +10,7 @@ import {
 } from '../../../shared/Layout.styles';
 import { Markdown } from '../../../shared/markdown';
 
-import { termsConstants } from '../../../utils/constants/terms';
-
-export const Terms = () => {
-  const { subHeading, termsInstructionsText, termsButtonText } = termsConstants;
+export const Page4 = () => {
   const { push } = useHistory();
 
   return (
@@ -21,14 +18,17 @@ export const Terms = () => {
       <Header />
       <PageLayoutContainer>
         <SectionContainer>
-          <Markdown children={subHeading} align="center" />
+          <Markdown children={'subHeading'} align="center" />
           <Markdown
-            children={termsInstructionsText}
+            children={'termsInstructionsText'}
             align="center"
             className="termsInstructionsText"
           />
           <ButtonGroupContainer align="center">
-            <Button onClick={() => push('/terms')} children={termsButtonText} />
+            <Button
+              onClick={() => push('/terms')}
+              children={'termsButtonText'}
+            />
           </ButtonGroupContainer>
         </SectionContainer>
         <Footer />

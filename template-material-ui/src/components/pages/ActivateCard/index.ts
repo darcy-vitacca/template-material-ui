@@ -1,1 +1,0 @@
-export { ActivateCard } from './ActivateCard'

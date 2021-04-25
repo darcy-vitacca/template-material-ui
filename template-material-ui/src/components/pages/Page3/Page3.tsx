@@ -7,23 +7,20 @@ import {
   SectionContainer,
 } from '../../../shared/Layout.styles';
 import { Markdown } from '../../../shared/markdown';
-import cardFront from '../../../images/cardFront.png';
-import { successConstants } from '../../../utils/constants/success';
 
-export const Success = () => {
-  const { subHeading, successText } = successConstants;
+export const Page3 = () => {
   return (
     <>
       <Header />
       <PageLayoutContainer>
         <SectionContainer align="center">
-          <Markdown children={subHeading} align="center" />
+          <Markdown children={'subHeading'} align="center" />
           <Markdown
-            children={successText}
+            children={'successText'}
             align="center"
             className="successText"
           />
-          <Image src={cardFront} />
+          <Image src={'cardFront'} />
         </SectionContainer>
         <Footer />
       </PageLayoutContainer>
