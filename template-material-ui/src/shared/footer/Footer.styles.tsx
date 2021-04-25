@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 export const FooterLinkSection = styled.div`
   margin: 30px 20px;

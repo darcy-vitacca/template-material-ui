@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import { device } from '../../styles/devices';
 
 export const BannerContainer = styled.div`
@@ -18,13 +18,4 @@ export const Banner = styled.img`
     display: block;
   }
 `;
-export const HeaderLogoSVG = styled.svg`
-  cursor: pointer;
-  width: 80%;
-  max-width: 500px;
-  min-width: 200px;
-  padding: 20px;
-  @media ${device.mobileLrg} {
-    display: none;
-  }
-`;
+export const SVGContainer = styled.svg``;

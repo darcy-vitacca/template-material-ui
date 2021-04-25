@@ -20,7 +20,6 @@ export const Page3 = () => {
             align="center"
             className="successText"
           />
-          <Image src={'cardFront'} />
         </SectionContainer>
         <Footer />
       </PageLayoutContainer>

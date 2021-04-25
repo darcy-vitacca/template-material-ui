@@ -3,12 +3,10 @@ import { Footer } from '../../../shared/footer';
 import { Button } from '../../../shared/formElements/button';
 import { Header } from '../../../shared/header';
 import {
-  Form,
   FormContainer,
   FormSectionContainer,
   PageLayoutContainer,
   SectionContainer,
-  ImageSplitFormSection,
   ButtonGroupContainer,
 } from '../../../shared/Layout.styles';
 import { Markdown } from '../../../shared/markdown';
@@ -40,4 +38,4 @@ export const Page2 = () => {
     </>
   );
 };
-const validationSchema = Yup.object().shape({});
+// const validationSchema = Yup.object().shape({});
