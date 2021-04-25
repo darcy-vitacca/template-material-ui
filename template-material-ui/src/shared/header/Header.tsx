@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 export const Header = () => {
   return (
     <HeaderContainer>
+      <BannerContainer></BannerContainer>
     </HeaderContainer>
   );
 };
