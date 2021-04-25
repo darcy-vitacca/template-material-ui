@@ -3,7 +3,12 @@ const white = '#ffffff';
 // const lightGrey = '#d8d8d8';
 export const grey = '#7f7f7f'
 export const error = '#ff0033';
-export const primary = '#db3c36'; //fujitsu red
+export const primary = '#FEFEFE';
+export const secondary = '#F34B4C';
+export const background = '#0B0E11';
+export const backgroundSecondary = '#151A21';
+export const backgroundThird = '#242C37';
+
 
 
 
@@ -24,6 +29,7 @@ export const theme = {
             default: primary,
         },
         secondary: {
+            default: secondary,
         },
         black: {
         },
@@ -40,7 +46,7 @@ export const theme = {
         text: {
             default: primary,
             white: white,
-            subText: grey,
+            subText: primary,
         },
         error: error,
     },
@@ -79,9 +85,14 @@ export const theme = {
     shadow: {
     },
     layout: {
-        background: white,
+        background: background,
+        backgroundSecondary: backgroundSecondary,
         borderRadius: '8px',
         buttonWidth: '200px',
+    },
+    button: {
+        background: backgroundThird,
+        border: backgroundThird,
     },
     mQ: {
         mobileSml: 320,

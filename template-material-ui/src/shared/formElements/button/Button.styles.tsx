@@ -14,8 +14,8 @@ export const ButtonContainer: FC<IButtonPropStyles> = styled.button`
   font-size: ${({ theme }) => theme.font.size.medium};
   font-weight: ${({ theme }) => theme.font.weight.semiBold};
   line-height: ${({ theme }) => theme.font.lineHeight.default};
-  background-color: ${({ theme }) => theme.colors.primary.default};
+  background-color: ${({ theme }) => theme.button.background};
   color: ${({ theme }) => theme.colors.text.white};
   border-radius: ${({ theme }) => theme.layout.borderRadius};
-  border: solid ${({ theme }) => theme.colors.primary.default};
+  border: solid ${({ theme }) => theme.button.background};
 `;
