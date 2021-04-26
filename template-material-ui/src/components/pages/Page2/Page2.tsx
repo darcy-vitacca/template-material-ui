@@ -17,7 +17,6 @@ export const Page2 = () => {
 
   return (
     <>
-      <Header />
       <PageLayoutContainer>
         <SectionContainer>
           <Markdown children={'heading'} />
@@ -33,7 +32,6 @@ export const Page2 = () => {
             <FormSectionContainer></FormSectionContainer>
           </FormContainer>
         </SectionContainer>
-        <Footer />
       </PageLayoutContainer>
     </>
   );

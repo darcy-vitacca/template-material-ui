@@ -9,10 +9,8 @@ import {
 export const NotFound = () => {
   return (
     <>
-      <Header />
       <PageLayoutContainer>
         <SectionContainer></SectionContainer>
-        <Footer />
       </PageLayoutContainer>
     </>
   );

@@ -15,7 +15,6 @@ export const Page4 = () => {
 
   return (
     <>
-      <Header />
       <PageLayoutContainer>
         <SectionContainer>
           <Markdown children={'subHeading'} align="center" />
@@ -31,7 +30,6 @@ export const Page4 = () => {
             />
           </ButtonGroupContainer>
         </SectionContainer>
-        <Footer />
       </PageLayoutContainer>
     </>
   );

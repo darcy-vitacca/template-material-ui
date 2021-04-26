@@ -11,7 +11,6 @@ import { Markdown } from '../../../shared/markdown';
 export const Page3 = () => {
   return (
     <>
-      <Header />
       <PageLayoutContainer>
         <SectionContainer align="center">
           <Markdown children={'subHeading'} align="center" />
@@ -21,7 +20,6 @@ export const Page3 = () => {
             className="successText"
           />
         </SectionContainer>
-        <Footer />
       </PageLayoutContainer>
     </>
   );

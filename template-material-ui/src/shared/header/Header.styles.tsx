@@ -7,6 +7,8 @@ export const BannerContainer = styled.div`
 `;
 export const HeaderContainer = styled.div`
   padding: 10px;
+  width: 100%;
+  background-color: ${({ theme }) => theme.layout.navBackground};
   @media ${device.mobileLrg} {
     padding: inherit;
   }

@@ -89,6 +89,7 @@ export const theme = {
         backgroundSecondary: backgroundSecondary,
         borderRadius: '8px',
         buttonWidth: '200px',
+        navBackground: backgroundThird,
     },
     button: {
         background: backgroundThird,

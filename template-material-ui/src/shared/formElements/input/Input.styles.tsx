@@ -5,7 +5,9 @@ import {
   mainFontFamily,
   primary,
   grey,
+  theme,
 } from '../../../styles/theme';
+import { createMuiTheme } from '@material-ui/core';
 
 export interface IInputContainerProps {
   width?: '25%' | '50%' | '75%' | '100%';
@@ -52,3 +54,14 @@ export const InputElement = styled(TextField)`
     color: ${grey};
   }
 `;
+
+export const inputTheme = createMuiTheme({
+  palette: {
+    primary: {
+      main: theme.colors.primary.default,
+    },
+    action: {
+      hover: '#FF00000',
+    },
+  },
+});

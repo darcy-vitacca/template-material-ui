@@ -1,8 +1,8 @@
+import { MuiThemeProvider } from '@material-ui/core';
 import React, { forwardRef } from 'react';
-import { useFormContext } from 'react-hook-form';
 
 import { Markdown } from '../../markdown';
-import { InputElement, InputContainer } from './Input.styles';
+import { InputElement, InputContainer, inputTheme } from './Input.styles';
 
 export interface IInputProps {
   name?: string;
@@ -15,31 +15,30 @@ export interface IInputProps {
 }
 
 const Input = forwardRef<HTMLInputElement, IInputProps>(
-  ({ type, label, validation, width, fieldName, maxLength }, ref) => {
-    const { setValue } = useFormContext();
+  ({ type, label, validation, width, maxLength }, ref) => {
     return (
-      <InputContainer width={width}>
-        <InputElement
-          label={label}
-          variant="outlined"
-          inputProps={{ maxLength: maxLength }}
-          type={type}
-          error={!!validation}
-          inputRef={ref}
-          onChange={(e) => {
-            setValue(fieldName, e.target.value);
-          }}
-          onKeyPress={(e) => {
-            if (!/[0-9]/.test(e.key) && type === 'tel') {
-              e.preventDefault();
-            }
-          }}
-        />
+      <MuiThemeProvider theme={inputTheme}>
+        <InputContainer width={width}>
+          <InputElement
+            label={label}
+            variant="outlined"
+            inputProps={{ maxLength: maxLength }}
+            type={type}
+            error={!!validation}
+            inputRef={ref}
+            onChange={(e) => {}}
+            onKeyPress={(e) => {
+              if (!/[0-9]/.test(e.key) && type === 'tel') {
+                e.preventDefault();
+              }
+            }}
+          />
 
-        {validation && (
-          <Markdown children={validation} className="validationText" />
-        )}
-      </InputContainer>
+          {validation && (
+            <Markdown children={validation} className="validationText" />
+          )}
+        </InputContainer>
+      </MuiThemeProvider>
     );
   }
 );
